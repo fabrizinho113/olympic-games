@@ -19,8 +19,7 @@ CREATE TABLE country(
 	id INT NOT NULL AUTO_INCREMENT,
 	country_name VARCHAR(45) NOT NULL,
     region VARCHAR(25) NOT NULL,
-    PRIMARY KEY (id),
-    FOREIGN KEY (city_id) REFERENCES city (id)
+    PRIMARY KEY (id)
 );
 
 CREATE TABLE games(
@@ -46,7 +45,7 @@ CREATE TABLE medal(
 CREATE TABLE person_country(
 	id INT NOT NULL AUTO_INCREMENT,
     person_id INT NOT NULL,
-    country_id INT NOT NULL
+    country_id INT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (person_id) REFERENCES person (id),
     FOREIGN KEY (country_id) REFERENCES country (id)
@@ -65,6 +64,7 @@ CREATE TABLE games_competitor(
 	id INT NOT NULL AUTO_INCREMENT,
     games_id INT NOT NULL,
     person_id INT NOT NULL,
+    PRIMARY KEY (id),
     FOREIGN KEY (games_id) REFERENCES games (id),
     FOREIGN KEY (person_id) REFERENCES person (id)
 );
@@ -96,8 +96,3 @@ CREATE TABLE competitor_event(
     FOREIGN KEY (competitor_id) REFERENCES games_competitor (id),
     FOREIGN KEY (medal_id) REFERENCES medal (id)
 );
-
-
-
-
-

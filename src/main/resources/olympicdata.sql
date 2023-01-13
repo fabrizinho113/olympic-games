@@ -77,4 +77,3 @@ INSERT into competitor_event(event_id, competitor_id, medal_id) VALUES (3, 3, 2)
 -- Show data (Athletes and cities)
 
 SELECT * FROM person;
-SELECT * from city;
