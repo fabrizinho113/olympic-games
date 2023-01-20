@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <athletes>
     <athlete id="1">
         <athlete_name>Kim Woo-Jin</athlete_name>
@@ -8,19 +8,9 @@
         <coachId>1</coachId>
         <competitionId>1</competitionId>
     </athlete>
-
     <athlete id="2">
         <athlete_name>Mete Gazos</athlete_name>
         <age>23</age>
-        <sportId>1</sportId>
-        <countryId>2</countryId>
-        <coachId>1</coachId>
-        <competitionId>1</competitionId>
-    </athlete>
-
-    <athlete id="3">
-        <athlete_name>Daiki Hashimoto</athlete_name>
-        <age>30</age>
         <sportId>1</sportId>
         <countryId>2</countryId>
         <coachId>1</coachId>

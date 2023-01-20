@@ -8,6 +8,7 @@ import java.sql.SQLException;
 
 public class ConnectionPool{
 
+    //Data about connection
     private static final String URL = "52.59.193.212";
     private static final String USER = "root";
     private static final String PASSWORD = "devintern";
